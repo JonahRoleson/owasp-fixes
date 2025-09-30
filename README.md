@@ -1,10 +1,10 @@
-# OWASP Top 10 - Fixes and Explanations
+ OWASP Top 10 - Fixes and Explanations
 
 This repository contains a single Python Flask demo (`owaspfixes.py`) that demonstrates secure fixes for several OWASP Top 10 vulnerabilities presented in the assignment prompt. The goal is educational: show the vulnerability, the reasoning, and a secure implementation pattern.
 
 ## What you’ll find
 
-* `owasp_fixes.py` — A runnable Flask application with example endpoints that show how to fix common mistakes:
+* `owaspfixes.py` — A runnable Flask application with example endpoints that show how to fix common mistakes:
 
   1. Broken Access Control (`/profile/<id>`, `/account/<id>`) — authorization enforced (owner or admin only).
   2. Cryptographic Failures (`/register`, `/login`) — passwords hashed with bcrypt, not MD5/SHA1.
@@ -96,7 +96,7 @@ pip install flask bcrypt requests
 2. Run the app:
 
 ```bash
-python owasp_fixes.py
+python owaspfixes.py
 ```
 
 3. Use `curl` or Postman to interact with endpoints. Example: register and login flow, or try `GET /profile/1` with header `X-User-Id: 1`.
