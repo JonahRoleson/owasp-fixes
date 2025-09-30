@@ -121,10 +121,3 @@ This demo is for learning and should be extended for production use:
 * Replace header-based auth with JWTs or secure server sessions.
 * Harden allowed host checks (including IP range checks) for SSRF protection.
 * Use CSP and SRI for browser-loaded resources, and pin package versions for server dependencies.
-
-If you'd like, I can:
-
-* Create a GitHub repo and push these files.
-* Add unit tests for endpoints.
-* Produce the optional 1-minute screen recording script and steps.
-
